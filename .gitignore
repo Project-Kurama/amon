@@ -65,6 +65,7 @@ typings/
 
 # compiled output
 /dist
+server/public/dist
 /tmp
 /out-tsc
 # Only exists if Bazel was run

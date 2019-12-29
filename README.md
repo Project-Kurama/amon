@@ -2,7 +2,7 @@
 Angular Mongoose Nodejs Fullstack baseline code
 ## Prerequisites
  * install nodejs
- * install mongo (i prefer doing this via Docker and Kitematic -- makes it an easy installation just remember to change the port in the settings though. but, this is highly optional, I use docker simply because i use it for a lot of other experiments as well)
+ * install mongo (i prefer doing this via Docker and Kitematic -- makes it an easy installation just remember to change the port in the settings though. But, using docker is highly optional. I use Docker simply because i use it for a lot of other experiments as well.
  * install git (if you need SCM else just download the zip)
  * install visual code. it is a good ide for JavaScript and the launch.json is meant to work with that
  * install gulp via command `npm install -g gulp`

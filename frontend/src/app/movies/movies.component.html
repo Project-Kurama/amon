@@ -1,1 +1,28 @@
-<p>movies works!</p>
+<div>
+    <form [formGroup]="movieForm" (ngSubmit)="addMovie($event)">
+        <input type="hidden" formControlName="id">
+        <input type="text" placeholder="name of the movie" formControlName="name">
+        <input type="text" placeholder="year of release" formControlName="releaseYear">
+        <input type="text" placeholder="Director's Name" formControlName="director">
+        <input type="text" placeholder="Production Studio" formControlName="studio">
+        <button type="submit" [disabled]="!movieForm.valid">Submit</button>
+    </form>
+    <table class="dataTable">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Year of Release</th>
+            <th>Director</th>
+            <th>Studio</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let movie of disPlayMovies">
+                <td>{{movie.id}}</td>
+                <td>{{movie.name}}</td>
+                <td>{{movie.releaseYear}}</td>
+                <td>{{movie.director}}</td>
+                <td>{{movie.studio}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
